@@ -14,7 +14,7 @@ try:
     client = pymongo.MongoClient('mongodb://localhost', 27017)
     db = client[settings.DB_NAME]
     orders = db['orders']
-    print(f'CONNECT TO DB ({settings.DB_NAME}) SUCCESSFULLY')
+    print(f'CONNECT TO DB ("{settings.DB_NAME}") SUCCESSFULLY')
 except Exception as e:
     logger.critical(e)
     raise f'ERROR CONNECT TO DB ({settings.DB_NAME})! Check file "logs.log"'
@@ -29,15 +29,22 @@ except Exception as e:
 class Order:
     LIST = {}
 
-    def __init__(self, name):
+    def __init__(self, name,
+                 bot_destination=None,
+                 bot_functions=None,
+                 need_admin_panel=False,
+                 contacts=None):
+
         self.name = name
-        self.bot_destination = None
-        self.bot_functions = None
-        self.need_admin_panel = False
-        self.contacts = None
+        self.bot_destination = bot_destination
+        self.bot_functions = bot_functions
+        self.need_admin_panel = need_admin_panel
+        self.contacts = contacts
 
     def save(self):
         orders.insert_one(self.get_dict())
+
+    def get_view(self):
         return f'<b>Ім\'я</b>: {self.name}\n' \
             f'<b>Призначення бота</b>: {self.bot_destination}\n' \
             f'<b>Функціональність</b>: {self.bot_functions}\n' \
@@ -167,8 +174,9 @@ def finale_create_order_step(message):
     order = Order.LIST[message.chat.id]
     order.contacts = message.text.strip()
     try:
-        order_text = order.save()
-        bot.send_message(message.chat.id, order_text, parse_mode='html')
+        order.save()
+        order_text = order.get_view()
+        bot.send_message(message.chat.id, order_text, parse_mode='html', reply_markup=ReplyKeyboardRemove())
         bot.send_message(message.chat.id, 'Заявку прийнято! Ми зв\'яжемось з Вами найближчим часом.')
     except Exception as e:
         logger.error(e)
@@ -176,7 +184,7 @@ def finale_create_order_step(message):
 
 
 def run_bot():
-    print('bot started')
+    print('BOT STARTED')
     bot.infinity_polling()
 
 
