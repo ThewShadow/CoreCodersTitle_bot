@@ -1,0 +1,1548 @@
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:root:division by zero
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Unsupported start tag "ul" at byte offset 5
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af44ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216af44ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af44ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af44ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae0c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae0c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae0c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae0c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5fac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216af5fac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5fac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5fac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae17790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1eaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae1eaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1eaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1eaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1ea00>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae1ea00>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1ea00>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae1ea00>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5f730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216af5f730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5f730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216af5f730>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae25ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25a30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae25a30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25a30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae25a30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae17c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae17c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae34310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae34310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae34310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae34310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae2bdf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae2bdf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae2bdf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae2bdf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae176a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ae176a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae176a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ae176a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ada0700>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f216ada0700>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ada0700>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f216ada0700>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3d4ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f276c3d4ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3d4ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3d4ee0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c29c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f276c29c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c29c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c29c550>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3eeac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f276c3eeac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3eeac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c3eeac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2a6790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f276c2a6790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2a6790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2a6790>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2aeaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f276c2aeaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2aeaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 650, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 107, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 371, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 349, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 328, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/apihelper.py", line 152, in _make_request
+    result = _get_req_session().request(
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot5387793531:AAG8D6FkGEV_94Waq7BZ-frnCuZ7y_tYkkU/getUpdates?offset=1&timeout=20 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f276c2aeaf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:root:delete_message() missing 1 required positional argument: 'message_id'
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling exception: 'NoneType' object is not callable
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 78, in create_order
+    desc_destination_step(message)
+TypeError: 'NoneType' object is not callable
+
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling exception: 'NoneType' object is not callable
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 78, in create_order
+    desc_destination_step(message)
+TypeError: 'NoneType' object is not callable
+
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling exception: 'NoneType' object is not callable
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 78, in create_order
+    desc_destination_step(message)
+TypeError: 'NoneType' object is not callable
+
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling exception: 'NoneType' object is not callable
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 78, in create_order
+    desc_destination_step(message)
+TypeError: 'NoneType' object is not callable
+
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:root:'NoneType' object is not callable
+ERROR:root:'NoneType' object is not callable
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+2022-04-21 15:32:50,004 Infinity polling exception: division by zero
+2022-04-21 15:32:50,006 Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 72, in create_order
+    f = 1/0
+ZeroDivisionError: division by zero
+
+2022-04-21 15:33:38,558 Infinity polling exception: division by zero
+2022-04-21 15:33:38,559 Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "main.py", line 72, in create_order
+    f = 1/0
+ZeroDivisionError: division by zero
+
+2022-04-21 15:33:45,905 Infinity polling: polling exited
+2022-04-21 15:33:45,905 Break infinity polling
+2022-04-21 15:33:53,863 Infinity polling exception: division by zero
+2022-04-21 15:33:53,867 Exception traceback:
+Traceback (most recent call last):
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 581, in infinity_polling
+    self.polling(none_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 629, in polling
+    self.__threaded_polling(non_stop, interval, timeout, long_polling_timeout, allowed_updates)
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 691, in __threaded_polling
+    raise e
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 143, in raise_exceptions
+    raise self.exception_info
+  File "/home/tepes/PycharmProjects/TitleBot/venv/lib/python3.8/site-packages/telebot/util.py", line 89, in run
+    task(*args, **kwargs)
+  File "/home/tepes/PycharmProjects/TitleBot/main.py", line 72, in create_order
+    f = 1/0
+ZeroDivisionError: division by zero
+
+2022-04-21 15:34:26,118 Infinity polling: polling exited
+2022-04-21 15:34:26,119 Break infinity polling
+2022-04-21 15:34:31,357 division by zero
+2022-04-21 15:37:36,355 Infinity polling: polling exited
+2022-04-21 15:37:36,355 Break infinity polling
+2022-04-21 15:37:40,421 - ERROR - division by zero
+2022-04-21 15:39:24,687 - ERROR - Infinity polling: polling exited
+2022-04-21 15:39:24,688 - ERROR - Break infinity polling
