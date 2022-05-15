@@ -1,3 +1,5 @@
+import smtplib
+
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telebot.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton
@@ -5,6 +7,10 @@ import settings
 import response_texts
 import logging
 import pymongo
+import email
+from email.utils import formataddr
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level='INFO', filename='logs.log', format=FORMAT)
@@ -25,10 +31,10 @@ except Exception as e:
     logger.critical(e)
     raise f'ERROR CREATE TELEGRAM BOT! Check file "logs.log"'
 
+recivers = ['zvichayniy.vick@gmail.com', 'ivpavliv@gmail.com']
 
 class Order:
     LIST = {}
-
     def __init__(self, name,
                  bot_destination=None,
                  bot_functions=None,
@@ -59,6 +65,23 @@ class Order:
             'need_admin_panel': self.need_admin_panel,
             'contacts': self.contacts,
         }
+
+    def send_order(self):
+        msg = MIMEMultipart()
+        msg['From'] = formataddr(('title.cc.bot@', settings.SENDER_MAIL))
+        msg['To'] = ', '.join(recivers)
+        msg['Subject'] = 'Нове замовлення '
+
+        content = self.get_view()
+        msg.attach(MIMEText(content, "html"))
+
+
+        with smtplib.SMTP_SSL(settings.SMTP_SERVER) as server:
+            server.login(settings.SENDER_MAIL, settings.SMTP_PASS)
+            server.send_message(msg)
+
+
+
 
 
 NEED_ADMIN_PANEL_VALUES = {
@@ -175,9 +198,11 @@ def finale_create_order_step(message):
     order.contacts = message.text.strip()
     try:
         order.save()
+        order.send_order()
         order_text = order.get_view()
         bot.send_message(message.chat.id, order_text, parse_mode='html', reply_markup=ReplyKeyboardRemove())
         bot.send_message(message.chat.id, 'Заявку прийнято! Ми зв\'яжемось з Вами найближчим часом.')
+
     except Exception as e:
         logger.error(e)
         bot.send_message(message.chat.id, response_texts.ERROR_MESSAGE)
